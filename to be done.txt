@@ -1,3 +1,0 @@
-create the dashboard 
-organize 
-put them in the github

@@ -1,13 +1,23 @@
 # -----------------------------
-# Ignore raw data (if exists)
+# Ignore raw data folders
 # -----------------------------
 data/
 raw/
+
+# -----------------------------
+# Ignore ALL csv files first
+# -----------------------------
 *.csv
 
-# Allow sample data CSVs
+# Allow sample data folder and its csv files
 !Sample Data/
 !Sample Data/*.csv
+
+# -----------------------------
+# Ignore unwanted root files
+# -----------------------------
+*.txt
+Screenshot_*.png
 
 # -----------------------------
 # Jupyter
@@ -15,35 +25,14 @@ raw/
 .ipynb_checkpoints/
 
 # -----------------------------
-# Logs
-# -----------------------------
-logs/
-*.log
-
-# -----------------------------
-# Python
+# Python cache
 # -----------------------------
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.env
-venv/
-.venv/
 
 # -----------------------------
-# OS files
+# OS junk
 # -----------------------------
 .DS_Store
 Thumbs.db
 __MACOSX/
-
-# -----------------------------
-# Allow important project files
-# -----------------------------
-!*.ipynb
-!*.py
-!*.pdf
-!*.pbix
-!*.md
-!.gitignore
