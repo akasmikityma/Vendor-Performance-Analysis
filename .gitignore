@@ -1,23 +1,19 @@
 # -----------------------------
-# Ignore raw data folders
+# Ignore raw / unwanted data
 # -----------------------------
 data/
 raw/
+logs/
 
-# -----------------------------
-# Ignore ALL csv files first
-# -----------------------------
+# Ignore all CSVs by default
 *.csv
 
-# Allow sample data folder and its csv files
+# -----------------------------
+# Allow Sample Data (nested)
+# -----------------------------
 !Sample Data/
-!Sample Data/*.csv
-
-# -----------------------------
-# Ignore unwanted root files
-# -----------------------------
-*.txt
-Screenshot_*.png
+!Sample Data/**/
+!Sample Data/**/*.csv
 
 # -----------------------------
 # Jupyter
@@ -36,3 +32,19 @@ __pycache__/
 .DS_Store
 Thumbs.db
 __MACOSX/
+
+# -----------------------------
+# Ignore misc
+# -----------------------------
+*.txt
+Screenshot_*.png
+
+# -----------------------------
+# Explicitly allow important files
+# -----------------------------
+!*.ipynb
+!*.py
+!*.pdf
+!*.pbix
+!*.md
+!.gitignore
