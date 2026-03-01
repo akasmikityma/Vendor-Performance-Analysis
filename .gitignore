@@ -1,0 +1,49 @@
+# -----------------------------
+# Ignore raw data (if exists)
+# -----------------------------
+data/
+raw/
+*.csv
+
+# Allow sample data CSVs
+!Sample Data/
+!Sample Data/*.csv
+
+# -----------------------------
+# Jupyter
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Logs
+# -----------------------------
+logs/
+*.log
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
+
+# -----------------------------
+# OS files
+# -----------------------------
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# -----------------------------
+# Allow important project files
+# -----------------------------
+!*.ipynb
+!*.py
+!*.pdf
+!*.pbix
+!*.md
+!.gitignore
